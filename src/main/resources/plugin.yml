@@ -1,7 +1,8 @@
 name: PartyFriendsStandardSettings
 version: ${project.version}
 author: Simonsator
-depends: [PartyAndFriends]
-depend: [PartyAndFriends]
+depends: [ PartyAndFriends ]
+depend: [ PartyAndFriends ]
 main: de.simonsator.partyandfriends.extensions.PAFStandardSettings
 description: Adds the possebility to set standard settings for players with a given permission
+api-version: 1.13

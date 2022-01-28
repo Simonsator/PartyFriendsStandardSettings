@@ -12,13 +12,14 @@ public class PAFStandardSettings extends PAFExtension {
 	@Override
 	public void onEnable() {
 		try {
-			ConfigurationCreator config = new PAFStandardSettingsConfiguration(new File(getDataFolder(), "config.yml"), this);
+			ConfigurationCreator config = new PAFStandardSettingsConfiguration(new File(getConfigFolder(), "config.yml"), this);
 			try {
 				Class.forName("org.bukkit.Bukkit");
 				new BukkitPAFAccountCreateListener(config, this);
 			} catch (ClassNotFoundException e) {
 				new BungeePAFAccountCreateListener(config, this);
 			}
+			registerAsExtension();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

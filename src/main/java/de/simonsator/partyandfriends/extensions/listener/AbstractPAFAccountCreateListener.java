@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbstractPAFAccountCreateListener {
-	private List<StandardSettings> standardSettingsList = new ArrayList<>();
+	private final List<StandardSettings> standardSettingsList = new ArrayList<>();
 
 	public AbstractPAFAccountCreateListener(ConfigurationCreator pConfig) {
 		for (String standardSettings : pConfig.getStringList("StandardSettings")) {

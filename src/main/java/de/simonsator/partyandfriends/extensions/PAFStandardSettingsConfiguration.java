@@ -8,11 +8,10 @@ import java.io.IOException;
 
 public class PAFStandardSettingsConfiguration extends ConfigurationCreator {
 	public PAFStandardSettingsConfiguration(File file, PAFExtension pafExtension) throws IOException {
-		super(file, pafExtension);
+		super(file, pafExtension, true);
 		readFile();
 		loadDefaults();
 		saveFile();
-		process();
 	}
 
 	private void loadDefaults() {

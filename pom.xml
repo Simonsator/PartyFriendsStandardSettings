@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.simonsator</groupId>
@@ -9,7 +9,9 @@
 	<name>PartyFriendsStandardSettings</name>
 	<packaging>jar</packaging>
 	<description>PartyFriendsStandardSettings</description>
-
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
 	<build>
 		<plugins>
 			<plugin>
@@ -31,37 +33,26 @@
 	</build>
 	<repositories>
 		<repository>
-			<id>bungeecord-repo</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<id>Bungee Repo</id>
+			<url>https://repo.md-5.net/content/groups/public/</url>
 		</repository>
 		<repository>
 			<id>simonsator-repo</id>
-			<url>http://simonsator.de/repo</url>
-		</repository>
-		<repository>
-			<id>spigot-repo</id>
-			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+			<url>https://simonsator.de/repo</url>
 		</repository>
 	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>de.simonsator</groupId>
 			<artifactId>BungeecordPartyAndFriends</artifactId>
-			<version>1.0.75</version>
+			<version>1.0.86</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.md-5</groupId>
 			<artifactId>bungeecord-api</artifactId>
-			<version>LATEST</version>
+			<version>1.16-R0.4</version>
 			<type>jar</type>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.md-5</groupId>
-			<artifactId>bungeecord-api</artifactId>
-			<version>LATEST</version>
-			<type>javadoc</type>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
